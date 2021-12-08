@@ -1,0 +1,55 @@
+.login {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    height: 100vh;
+    text-align: center;
+    padding: 6rem;
+    animation: fadeIn 4s;
+}
+
+.btn {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    /* background-color: #f00; */
+    background-color: #55c57a;
+    color: #fff;
+    box-shadow: inset 0 10rem 20rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.btn:active {
+    outline: none;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.imglogo {
+    width: auto;
+    max-height: 1200px;
+}
+
+.logosbox {
+    display: flex;
+    width: 60vw;
+    height: 50%;
+    justify-content: space-between;
+    gap: 13px;
+}

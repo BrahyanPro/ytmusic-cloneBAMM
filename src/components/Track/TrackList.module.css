@@ -1,0 +1,33 @@
+.tracks {
+  margin-top: 9rem;
+  color: #fff;
+}
+
+.tracks h2 {
+  font-size: 2.4rem;
+  letter-spacing: -0.01em;
+  padding-bottom: 2rem;
+}
+
+
+/***********************/
+/*    Media Queries    */
+/***********************/
+
+@media (max-width: 84em) { /* 1344px (Small desktops)*/
+  .tracks {
+    margin: 6rem 0;
+  }
+}
+
+@media (max-width: 59em) { /* 944px (Tablets) */
+  .tracks {
+    margin: 7rem 0;
+  }
+}
+
+@media (max-width: 44em) { /* 704px (Small tablets) */
+  .tracks {
+    margin: 5rem 0;
+  }   
+}

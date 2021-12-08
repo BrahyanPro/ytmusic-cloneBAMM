@@ -1,0 +1,88 @@
+.album {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+
+  margin-top: 5.6rem;
+  color: #fff;
+}
+
+.album img {
+  width: 26.4rem;
+  margin-right: 4.8rem;
+  border-radius: 0.3rem ;
+}
+
+.content h2 {
+  font-size: 3.4rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.6rem;
+}
+
+.content a, span, p  {
+  font-size: 1.6rem;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.content p {
+  margin: 0.4rem 0 4rem;
+}
+
+.content img {
+  width: 1.7rem;
+  margin-right: 1rem;
+}
+
+.content button {
+  display: inline-flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: .2rem;
+  border: none;  
+  outline: none;
+  cursor: pointer;
+}
+
+/* add to library button */
+.content button:last-child {
+  color: rgba(255, 255, 255, 0.7);
+  background-color: transparent;
+  border: .1rem solid rgba(255, 255, 255, 0.7);
+  cursor: no-drop;
+}
+
+
+/***********************/
+/*    Media Queries    */
+/***********************/
+
+@media (max-width: 44em) { /* 704px (Small tablets) */
+  .album {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+  }
+  .album img {
+    margin: 0 auto;
+  }
+  .content img {
+    margin-right: 1.2rem;
+  }
+}
+
+@media (max-width: 34em) { /* 544px (Phones) */
+  .content button:last-child {
+    margin-top: 1.2rem;
+  }
+}

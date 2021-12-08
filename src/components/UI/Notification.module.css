@@ -1,0 +1,78 @@
+.notification {  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  animation: fadeIn 3s;
+}
+
+.notification img {
+  width: 15rem;
+}
+
+.notification p {
+  font-size: 1.8rem;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.notification span {
+  font-size: 1.8rem;
+  color:#f00;
+}
+
+.notification h2 {
+  font-size: 8rem;
+  text-align: center;
+  color: #f00;
+}
+
+.notification button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  cursor: pointer; 
+  background-color: #f00;
+  /* background-color: #55c57a; */
+  color: #fff; 
+  border: none;
+  box-shadow: inset 0 10rem 20rem rgba(0, 0, 0, 0.2); 
+  
+  transition: all .3s;
+}
+
+.notification button:hover { opacity: 0.8 }
+
+@keyframes fadeIn {
+  0% {opacity:0}
+  100% {opacity:1}
+}
+
+
+/***********************/
+/*    Media Queries    */
+/***********************/
+
+@media (max-width: 34em) { /* 544px (Phones) */
+  .notification { 
+    gap: 3rem;
+  }
+  .notification h2 {
+    font-size: 5rem;
+  }
+  .notification p, .notification span {
+    font-size: 1.2rem;
+  }
+  .notification button {
+    font-size: 1.3rem;
+  }
+}

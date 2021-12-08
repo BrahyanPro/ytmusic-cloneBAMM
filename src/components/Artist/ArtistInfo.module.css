@@ -1,0 +1,132 @@
+.content {
+  padding-top: 40rem;
+  color: #fff;
+}
+
+.background {
+  height: 60%;
+  background-size: cover;
+  box-shadow: inset 0 -22px 90px 100px #030303; 
+
+  /* Buscar cómo hacer para que no se vea el border-buttom y colocar el fadeIn a la imagen */
+
+  /* backgroundAttachment: fixed, */
+  /* opacity: 0.8, */
+}
+
+.content h2 {
+  font-size: 4.5rem;
+  margin-bottom: 1.6rem;
+  letter-spacing: -0.01em;
+}
+
+.content p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4;
+  width: 64rem;
+  margin-bottom: 1.6rem;
+
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.content div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;  
+
+  flex-wrap: wrap;
+}
+
+.content img {
+  width: 1.7rem;
+  margin-right: 1rem;
+}
+
+.content button {
+  display: inline-flex;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: .2rem;
+  border: none;
+  outline: none;  
+}
+
+/* suscriptors button */
+.content button:last-child {
+  color: rgba(255, 255, 255, 0.7);
+  background-color: transparent;
+  border: .1rem solid rgba(255, 255, 255, 0.7);
+  cursor: default;
+  gap: .8rem;
+}
+
+.content button:last-child img {
+  margin: 0;
+}
+
+/* radio button */
+.content button:nth-child(2) {
+  cursor: no-drop;
+}
+
+
+/***********************/
+/*    Media Queries    */
+/***********************/
+
+@media (max-width: 84em) { /* 1344px (Small desktops)*/
+  .content { 
+    padding-top: 24rem;
+  }
+  .content h2 { 
+    font-size: 3.5rem; 
+  }
+  .background { 
+    height: 70%;
+  }
+}
+
+@media (max-width: 75em) { /* 1200px (Landscape Tablets) */
+  .content { 
+    padding-top: 26rem; 
+  }
+}
+
+@media (max-width: 59em) { /* 944px (Tablets) */
+  .content { 
+    padding-top: 31rem; 
+  }
+}
+
+@media (max-width: 44em) { /* 704px (Small tablets) */
+  .content {
+    padding-top: 28rem;
+  }
+}
+
+@media (max-width: 34em) { /* 544px (Phones) */
+  .content {
+    padding-top: 22rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .content p {
+    width: 40rem;
+    margin: 0 auto 1.5rem;
+  }
+  .content div {
+    justify-content: center;
+  }
+  .background {
+    background-position: 50%;
+    background-size: cover;
+  } 
+}
